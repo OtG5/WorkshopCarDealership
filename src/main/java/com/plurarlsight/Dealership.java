@@ -1,13 +1,14 @@
 package com.plurarlsight;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Dealership {
     private  String name;
     private  String address;
     private  String phone;
 
-    private ArrayList<Vechicle> vechile;
+    ArrayList<Vechicle> inventory = new ArrayList<Vechicle>();
 
     public  Dealership(String name, String address, String phone){
         this.name = name;
@@ -15,9 +16,23 @@ public class Dealership {
         this.phone = phone;
     }
 
-    public ArrayList<Vechicle> getVechile() {
-        return vechile;
+
+    public String getGetVechilesByMakemodel() {
+        return getVechilesByMakemodel;
     }
 
-    public double getVechilesByPrice();
+    public double getVechicleByPrice(min, max){
+        return getVechiclesByPrice;
+    }
+
+    public String getVechilesByMakemodel{
+
+    }
+    public int getVechicleByYear{}
+
+    public
+
+    public int getGetVechicleByYear() {
+        return getVechicleByYear;
+    }
 }

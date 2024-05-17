@@ -5,13 +5,8 @@ public class Vechicle{
      private int year;
      private String make;
      private  String model;
-
-     private String car;
-     private String truck;
-     private  String van;
-     private String suv;
-     private String color;
      private int odometer;
+     private String type;
      private double price;
      // questions
      // What would I use for the vechletype
@@ -19,18 +14,70 @@ public class Vechicle{
      // would I need to set it to a boolean
      // static method for t
 
-     public Vechicle(int vin, int year, String make, String model, String car, String truck, String van, String suv){
+     public Vechicle(int vin, int year, String make, String model, String type, double price, int odometer){
           this.vin = vin;
           this.year = year;
           this.make = make;
-          this.model = model
-          this.car = car;
-          //this.truck = truck;
-         // this.van = van;
-         // this.suv = suv;
+          this.model = model;
+          this.type = type;
+          this.price = price;
+          this.odometer = odometer;
+
+     }
+
+     public int getVin() {
+          return vin;
+     }
+
+     public void setVin(int vin) {
+          this.vin = vin;
+     }
+
+     public int getYear() {
+          return year;
+     }
+
+     public void setYear(int year) {
+          this.year = year;
+     }
+
+     public String getMake() {
+          return make;
+     }
+
+     public void setMake(String make) {
+          this.make = make;
+     }
+
+     public String getModel() {
+          return model;
+     }
+
+     public void setModel(String model) {
+          this.model = model;
+     }
+
+     public int getOdometer() {
+          return odometer;
+     }
+
+     public void setOdometer(int odometer) {
+          this.odometer = odometer;
+     }
+
+     public String getType() {
+          return type;
+     }
+
+     public void setType(String type) {
+          this.type = type;
      }
 
      public double getPrice() {
           return price;
+     }
+
+     public void setPrice(double price) {
+          this.price = price;
      }
 }
